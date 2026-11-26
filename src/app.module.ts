@@ -3,6 +3,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { HealthModule } from './health/health.module.js';
 import { WebhooksModule } from './webhooks/webhooks.module.js';
+import { GithubModule } from './github/github.module.js';
 
 @Module({
   imports: [
@@ -11,6 +12,7 @@ import { WebhooksModule } from './webhooks/webhooks.module.js';
     }),
     HealthModule,
     WebhooksModule,
+    GithubModule,
   ],
 })
 export class AppModule {}
